@@ -1,11 +1,12 @@
 {
   "name": "webbybot-mock-adapter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A mock Adapter written in ES6 for unit testing Hubot and Webbybot scripts",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && mkdir dist",
-    "build": "babel index.js -o dist/index.js"
+    "build": "babel index.js -o dist/index.js",
+    "lint": "eslint index.js"
   },
   "keywords": [
     "hubot",
