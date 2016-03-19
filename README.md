@@ -1,6 +1,8 @@
-# mock adapter for unit-testing Webbybot and Hubot
+# hubot-mockadapter
 
-[![Dependency Status](https://david-dm.org/gasolin/webbybot-mock-adapter.svg)](https://david-dm.org/gasolin/webbybot-mock-adapter) [![npm](https://img.shields.io/npm/v/webbybot-mock-adapter.svg)](https://www.npmjs.com/package/webbybot-mock-adapter)
+mock adapter for unit-testing Webbybot and Hubot
+
+[![Dependency Status](https://david-dm.org/gasolin/hubot-mockadapter.svg)](https://david-dm.org/gasolin/hubot-mockadapter) [![npm](https://img.shields.io/npm/v/hubot-mockadapter.svg)](https://www.npmjs.com/package/hubot-mockadapter)
 
 Rewrote from [hubot-mock-adapter](https://github.com/blalor/hubot-mock-adapter)
 
@@ -34,7 +36,7 @@ describe("Eddie the shipboard computer", function() {
 
     beforeEach(function(done) {
         // create new robot, without http, using the mock adapter
-        robot = new Robot(null, "mock-adapter", false, "Eddie");
+        robot = new Robot(null, "mockadapter", false, "Eddie");
 
         robot.adapter.on("connected", function() {
             // only load scripts we absolutely need, like auth.coffee
@@ -86,7 +88,7 @@ You'll need `devDependencies` something like this in your `package.json`:
 ```js
 "devDependencies": {
   "chai": "~1.9.0",
-  "webbybot-mock-adapter": "~1.0.0",
+  "hubot-mockadapter": "~1.0.0",
   "mocha": "~1.17.1",
   "webbybot": "^0.2.1",
   "sinon": "~1.9.0"

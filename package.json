@@ -1,6 +1,6 @@
 {
-  "name": "webbybot-mock-adapter",
-  "version": "1.0.2",
+  "name": "hubot-mockadapter",
+  "version": "2.0.0",
   "description": "A mock Adapter written in ES6 for unit testing Hubot and Webbybot scripts",
   "main": "dist/index.js",
   "scripts": {
