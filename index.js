@@ -2,35 +2,35 @@ import Adapter from 'webbybot/dist/src/adapter';
 
 class MockAdapter extends Adapter {
   send(envelope, ...strings) {
-    this.robot.emit('send', envelope, strings);
+    this.emit('send', envelope, strings);
   }
 
   emote(envelope, ...strings) {
-    this.robot.emit('emote', envelope, strings);
+    this.emit('emote', envelope, strings);
   }
 
   reply(envelope, ...strings) {
-    this.robot.emit('reply', envelope, strings);
+    this.emit('reply', envelope, strings);
   }
 
   topic(envelope, ...strings) {
-    this.robot.emit('topic', envelope, strings);
+    this.emit('topic', envelope, strings);
   }
 
   play(envelope, ...strings) {
-    this.robot.emit('play', envelope, strings);
+    this.emit('play', envelope, strings);
   }
 
   run() {
-    this.robot.emit('connected');
+    this.emit('connected');
   };
 
   close() {
-    this.robot.emit('closed');
+    this.emit('closed');
   };
 
   receive(message) {
-    this.robot.emit('received');
+    this.emit('received');
   }
 }
 
